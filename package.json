@@ -1,0 +1,38 @@
+{
+  "name": "bun-astro-starter-with-bootstrap",
+  "version": "1.0.0",
+  "description": "A starter template using Bun.js, Astro.js, Alpine.js, Bootstrap, and TypeScript.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun astro dev",
+    "build": "bun astro build",
+    "start": "bun astro preview",
+    "check": "tsc --noEmit",
+    "clean": "rm -rf dist .astro"
+  },
+  "dependencies": {
+    "@astrojs/alpinejs": "^0.4.0",
+    "alpinejs": "^3.14.1",
+    "astro": "^4.15.4",
+    "bootstrap": "^5.3.3",
+    "typescript": "^5.5.4",
+    "sass": "^1.78.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@types/bootstrap": "^5.2.10",
+    "lightningcss": "^1.26.0",
+    "autoprefixer": "^10.4.20"
+  },
+  "keywords": [
+    "bun",
+    "astro",
+    "alpinejs",
+    "bootstrap",
+    "typescript",
+    "starter",
+    "template"
+  ],
+  "author": "Casoon",
+  "license": "MIT"
+}

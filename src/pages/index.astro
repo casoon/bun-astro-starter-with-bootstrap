@@ -1,0 +1,14 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout>
+    <h2 class="text-3xl text-center">Willkommen zu Astro + Bun.js + Alpine.js</h2>
+
+    <div x-data="{ open: false }" class="text-center mt-6">
+        <button @click="open = !open" class="bg-blue-500 text-white px-4 py-2 rounded">
+            Toggle Info
+        </button>
+        <p x-show="open" class="mt-4 text-lg">Hier ist interaktiver Inhalt mit Alpine.js!</p>
+    </div>
+</MainLayout>
