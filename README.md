@@ -1,4 +1,3 @@
-```markdown
 # Bun Astro Starter with Bootstrap
 
 ![License](https://img.shields.io/github/license/casoon/bun-astro-starter-with-bootstrap)
@@ -115,5 +114,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Author
 
 Created by **Casoon**.
-
-```
