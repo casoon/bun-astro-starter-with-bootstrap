@@ -19,6 +19,7 @@
     "sass": "^1.78.0"
   },
   "devDependencies": {
+    "@astrojs/ts-plugin": "^1.10.2",
     "@types/node": "^22.5.4",
     "@types/bootstrap": "^5.2.10",
     "lightningcss": "^1.26.0",
