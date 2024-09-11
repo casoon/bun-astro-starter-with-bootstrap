@@ -8,7 +8,9 @@
     "build": "bun astro build",
     "start": "bun astro preview",
     "check": "tsc --noEmit",
-    "clean": "rm -rf dist .astro"
+    "clean": "rm -rf dist .astro",
+    "sass": "sass src/styles/bootstrap.scss src/styles/bootstrap.css --style=compressed --quiet --source-map",
+    "sass:watch": "sass --watch src/styles/bootstrap.scss:src/styles/bootstrap.css --style=compressed --quiet --source-map"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
@@ -22,8 +24,7 @@
     "@astrojs/ts-plugin": "^1.10.2",
     "@types/node": "^22.5.4",
     "@types/bootstrap": "^5.2.10",
-    "lightningcss": "^1.26.0",
-    "autoprefixer": "^10.4.20"
+    "lightningcss": "^1.26.0"
   },
   "keywords": [
     "bun",

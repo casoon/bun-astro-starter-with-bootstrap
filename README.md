@@ -1,145 +1,121 @@
-```markdown
-# Bun + Astro Starter with Bootstrap
+Hier ist die angepasste `README.md`, die als GitHub-Template verwendet werden kann:
 
-Welcome to the **Bun + Astro Starter with Bootstrap**! This template is built using **Bun.js**, **Astro.js**, **Bootstrap** for styling, **Alpine.js** for interactivity, and **TypeScript** for type safety. It also supports **Sass** for extended styling capabilities, and **Autoprefixer** to ensure cross-browser compatibility.
+```markdown
+# Bun Astro Starter with Bootstrap
+
+![License](https://img.shields.io/github/license/casoon/bun-astro-starter-with-bootstrap)
+![Stars](https://img.shields.io/github/stars/casoon/bun-astro-starter-with-bootstrap)
+![Issues](https://img.shields.io/github/issues/casoon/bun-astro-starter-with-bootstrap)
+
+A starter template using **Bun.js**, **Astro.js**, **Alpine.js**, **Bootstrap**, and **TypeScript**.
 
 ## Features
 
-- **Bun.js**: Ultra-fast JavaScript runtime for building server-side applications.
-- **Astro.js**: Static site generator optimized for speed and flexibility, shipping minimal JavaScript.
-- **Bootstrap**: Popular CSS framework for responsive design, now enhanced with **Sass** support.
-- **Alpine.js**: Lightweight framework for interactive UI components with minimal overhead.
-- **TypeScript**: Static type checking for improved code reliability and development experience.
-- **Sass**: Extended CSS capabilities with support for variables, nesting, and more.
-- **Autoprefixer**: Ensures cross-browser compatibility by automatically adding vendor prefixes to CSS rules.
+- **Bun.js**: Fast JavaScript runtime for package management and builds.
+- **Astro.js**: Static site generator focused on speed and simplicity.
+- **Alpine.js**: Lightweight JavaScript framework for UI interactions.
+- **Bootstrap**: CSS framework for responsive and modern design.
+- **TypeScript**: Static typing for a better developer experience.
+- **Sass**: CSS preprocessor for writing reusable, scalable styles.
+
+## Requirements
+
+- **Bun**: Install Bun on your system by following the [official instructions](https://bun.sh).
+- **Node.js**: Required for TypeScript and other tooling. Make sure it's installed.
 
 ## Getting Started
-
-### Prerequisites
-
-Make sure you have **Bun** installed on your system. You can find the installation guide [here](https://bun.sh/).
-
-### Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/casoon/bun-astro-starter-with-bootstrap.git
+   git clone https://github.com/your-username/bun-astro-starter-with-bootstrap.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
    cd bun-astro-starter-with-bootstrap
    ```
 
-2. Install the dependencies using Bun:
+3. Install dependencies:
 
    ```bash
    bun install
    ```
 
-### Running the Development Server
+4. Start the development server:
 
-To start the development server, use the following command:
+   ```bash
+   bun run dev
+   ```
 
-```bash
-bun astro dev
+   The app will be available at `http://localhost:3000`.
+
+## Scripts
+
+- `dev`: Start the development server.
+- `build`: Create a production build.
+- `start`: Preview the production build.
+- `check`: Run TypeScript checks.
+- `clean`: Clean up the build directory.
+- `sass`: Compile SCSS into CSS.
+- `sass:watch`: Watch SCSS files and compile on changes.
+
+## Custom Styles
+
+### Global Styles
+
+- The `global.css` file is available for any additional global styles, but it is currently empty. You can use it to
+  define custom global CSS rules.
+
+### Bootstrap Customization
+
+You can customize Bootstrap in the `src/styles/bootstrap.scss` file.
+
+Example of overriding the primary color:
+
+```scss
+$primary: #ffa500; // Custom orange primary color
 ```
 
-The server will typically start at `http://localhost:3000`.
-
-### Building for Production
-
-To build the project for production, run:
-
-```bash
-bun astro build
-```
-
-This will generate the static files in the `dist/` directory.
-
-### Cleaning the Build
-
-If you need to clean the build artifacts, run:
-
-```bash
-bun run clean
-```
-
-This removes the `dist/` and `.astro/` directories.
+You can import only the necessary Bootstrap components to keep the bundle size small.
 
 ## Project Structure
 
-Here’s a breakdown of the key directories and files in this project:
-
-```
+```plaintext
+bun-astro-starter-with-bootstrap/
 ├── src/
-│   ├── layouts/         # Layout components (e.g., MainLayout.astro)
-│   ├── pages/           # Astro page components
-│   ├── styles/          # Global styles (Bootstrap + Sass)
-│   └── components/      # Reusable UI components
-├── public/              # Static assets (images, fonts, etc.)
-├── astro.config.mjs     # Astro configuration file
-├── tsconfig.json        # TypeScript configuration file
-├── package.json         # Project metadata and scripts
-├── bun.lockb            # Bun lockfile for dependencies
+│   ├── components/      # Reusable components
+│   ├── layouts/         # Layout components
+│   ├── pages/           # Page routes
+│   └── styles/          # SCSS files for styles
+├── public/              # Static assets
+├── package.json         # Project dependencies and scripts
+└── astro.config.mjs     # Astro configuration
 ```
 
-### Customization
+## Dependencies
 
-- **Bootstrap**: Bootstrap is included via Sass. You can extend or override Bootstrap styles in `src/styles/global.scss`.
-- **Alpine.js**: Alpine.js is available for interactivity. Add it in your templates with directives like `x-data`, `x-show`, etc.
-- **Sass**: Use `src/styles/global.scss` for custom styles. Sass offers advanced features like variables and nesting.
-- **Autoprefixer**: Ensures that your final CSS is cross-browser compatible by automatically adding necessary vendor prefixes.
+- `@astrojs/alpinejs`: Astro integration for Alpine.js.
+- `alpinejs`: Lightweight framework for UI interactions.
+- `astro`: Static site generator.
+- `bootstrap`: CSS framework for responsive design.
+- `typescript`: Static typing.
+- `sass`: CSS preprocessor.
 
-### Scripts in `package.json`
+## Dev Dependencies
 
-```json
-{
-  "scripts": {
-    "dev": "bun astro dev",
-    "build": "bun astro build",
-    "start": "bun astro preview",
-    "check": "tsc --noEmit",
-    "clean": "rm -rf dist .astro"
-  }
-}
-```
-
-- `dev`: Starts the development server.
-- `build`: Builds the project for production.
-- `start`: Previews the production build.
-- `check`: Runs TypeScript type-checking without emitting output.
-- `clean`: Cleans the `dist/` and `.astro/` directories.
+- `@astrojs/ts-plugin`: TypeScript support for Astro.
+- `@types/node`: TypeScript definitions for Node.js.
+- `@types/bootstrap`: TypeScript definitions for Bootstrap.
+- `lightningcss`: Optimizer for CSS.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+## Author
 
-## MIT License
+Created by **Casoon**.
 
 ```
-MIT License
-
-Copyright (c) 2024 Casoon
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-## Contributing
-
-Feel free to open issues or submit pull requests to improve this template. Contributions are always welcome!
