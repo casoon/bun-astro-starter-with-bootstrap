@@ -12,6 +12,64 @@ at: [https://bun-astro-starter-with-bootstrap.casoon.dev/](https://bun-astro-sta
 You can use this project as a template to quickly start your own project. Simply click the **"Use this template"**
 button on GitHub, and you'll have a copy of the repository to work with.
 
+## Why Astro.js?
+
+**Astro.js** is a relatively new solution in web development that stands out with its **content-first** philosophy.
+While many modern frameworks like React or Vue focus on building interactive web applications, Astro emphasizes
+generating **optimized static HTML**. This optimization aims to minimize the amount of JavaScript sent to the client,
+providing a faster and leaner user experience.
+
+Detailed benefits:
+
+- **Optimized load times**: By generating pure HTML, Astro significantly reduces time to full page load. JavaScript is
+  only used where absolutely necessary.
+- **Partial hydration**: Unlike traditional single-page applications (SPAs), Astro allows for hydrating individual
+  components. This means only interactive parts of a page require JavaScript, while the rest is served as static HTML.
+- **Framework flexibility**: You can seamlessly integrate components from React, Vue, Svelte, and other frameworks in
+  Astro, without being tied to a specific library. This gives developers maximum flexibility when choosing tools.
+- **Modern development tools**: Astro natively integrates modern tools like **ESM** (ECMAScript Modules) and offers
+  out-of-the-box support for **TypeScript**.
+- **Server-Side Rendering (SSR)**: While Astro is primarily known for generating static sites, it also supports **SSR**
+  for more dynamic use cases. With SSR, Astro can render content on the server for each request, enabling personalized,
+  real-time updates without sacrificing the performance benefits of static HTML. This makes it a versatile choice for
+  websites that need both static and dynamic content handling.
+
+## Why Bun.js?
+
+**Bun.js** is a high-performance JavaScript runtime focused on speed and efficiency. It combines several development
+tools in one package and offers remarkable performance by being built on **WebKit's JavaScriptCore** (instead of V8,
+like Node.js).
+
+Key advantages of Bun.js:
+
+- **Fast module resolution and runtime**: Bun.js resolves JavaScript modules extremely quickly, making it particularly
+  beneficial for projects with many dependencies or large codebases. The speed advantages over Node.js are significant.
+- **Built-in development tools**: Bun offers native support for **TypeScript**, **ESM**, **SCSS**, and more, without
+  needing extra configuration or external tools like Webpack or Babel.
+- **Streamlined development process**: With Bun, you can handle the entire build process — from package management to
+  transpiling and bundling. This simplifies the toolchain, reduces dependencies, and accelerates the workflow.
+- **Lower memory usage**: Bun.js is optimized for lower memory consumption, making it ideal for projects that prioritize
+  resource efficiency.
+
+## Why Lightning CSS?
+
+**Lightning CSS** is a highly optimized tool for CSS processing. While many CSS optimization tools exist, Lightning CSS
+provides a unique combination of **speed** and **future-proofing**. It is designed to support modern CSS features while
+maintaining excellent compatibility with older browsers.
+
+Detailed benefits:
+
+- **Ultra-fast processing**: Lightning CSS is designed to minify and optimize CSS files at lightning speed, ensuring
+  fast builds even for large and complex stylesheets.
+- **Autoprefixing with future support**: It supports modern CSS specifications and automatically adds **vendor prefixes
+  ** to ensure your website works across as many browsers as possible without worrying about browser compatibility
+  issues.
+- **Cutting-edge CSS**: Lightning CSS not only supports current CSS specifications but also experimental and future
+  standards. It ensures you can use modern features like CSS Grid, Flexbox, or Custom Properties without running into
+  compatibility problems.
+- **Error detection**: Lightning CSS analyzes your CSS code for potential errors and warns you early, helping you avoid
+  layout issues or performance degradation.
+
 ## Features
 
 - **Bun.js**: Fast JavaScript runtime for package management and builds.
