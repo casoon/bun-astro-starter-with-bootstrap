@@ -1,14 +1,45 @@
 ---
 import "../styles/global.css";
 import '../styles/bootstrap.css';
+
+// Props für title und description
+const {title, description} = Astro.props;
+
+// Laden von author und canonical aus einer config Datei
+import config from '../config/site.config';
 ---
 
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astro + Bootstrap</title>
-    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description}/>
+
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content={title}/>
+    <meta property="og:description" content={description}/>
+    <meta property="og:image" content="/path/to/image.jpg"/>
+    <meta property="og:url" content={config.canonical}/>
+    <meta property="og:type" content="website"/>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content={title}/>
+    <meta name="twitter:description" content={description}/>
+    <meta name="twitter:image" content="/path/to/image.jpg"/>
+
+    <!-- Author from Config -->
+    <meta name="author" content={config.author}/>
+
+    <!-- Canonical Link from Config -->
+    <link rel="canonical" href={config.canonical}/>
+
+    <meta name="generator" content={Astro.generator}/>
+
+    <meta name="generator" content={Astro.generator}/>
     {Astro.head}
 </head>
 <body>
@@ -17,7 +48,7 @@ import '../styles/bootstrap.css';
 </header>
 
 <main class="container">
-    <slot />
+    <slot/>
 </main>
 
 <footer class="bg-dark p-4 text-center text-white">
