@@ -1,9 +1,0 @@
----
-import config from '../config/site.config';
-
-const disallowedPaths = config.excludeFromRobots;
----
-User-agent: *
-Disallow: {disallowedPaths.map(path => `Disallow: ${path}\n`).join('')}
-
-Sitemap: {config.siteUrl}/sitemap.xml

@@ -1,12 +1,12 @@
 ---
-import "../styles/global.css";
-import '../styles/bootstrap.css';
+import "@/styles/global.css";
+import '@/styles/bootstrap.css';
+import config from '@/config';
 
 // Props für title und description
 const {title, description} = Astro.props;
 
-// Laden von author und canonical aus einer config Datei
-import config from '../config/site.config';
+console.log("siteUrl: ", config.siteUrl);
 ---
 
 <html lang="de">
@@ -16,7 +16,6 @@ import config from '../config/site.config';
 
     <title>{title}</title>
     <meta name="description" content={description}/>
-
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content={title}/>
@@ -37,7 +36,7 @@ import config from '../config/site.config';
     <!-- Canonical Link from Config -->
     <link rel="canonical" href={config.canonical}/>
 
-    <meta name="generator" content={Astro.generator}/>
+    <link rel="sitemap" href="/sitemap-index.xml"/>
 
     <meta name="generator" content={Astro.generator}/>
     {Astro.head}
