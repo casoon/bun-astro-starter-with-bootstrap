@@ -7,8 +7,8 @@ export default defineConfig({
     site: config.siteUrl,
     integrations: [alpine(), sitemap({
         filter: (page) =>
-            page !== config.siteUrl + 'test/' &&
-            page !== config.siteUrl + 'test1/',
+            page !== config.siteUrl + '/test/' &&
+            page !== config.siteUrl + '/test1/',
         changefreq: 'weekly',
         priority: 0.7,
         lastmod: new Date(),
