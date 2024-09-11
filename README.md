@@ -1,5 +1,3 @@
-Hier ist die angepasste `README.md`, die als GitHub-Template verwendet werden kann:
-
 ```markdown
 # Bun Astro Starter with Bootstrap
 
