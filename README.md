@@ -6,6 +6,9 @@
 
 A starter template using **Bun.js**, **Astro.js**, **Alpine.js**, **Bootstrap**, **Lightning CSS**, and **TypeScript**.
 
+You can use this project as a template to quickly start your own project. Simply click the **"Use this template"**
+button on GitHub, and you'll have a copy of the repository to work with.
+
 ## Features
 
 - **Bun.js**: Fast JavaScript runtime for package management and builds.
@@ -23,10 +26,19 @@ A starter template using **Bun.js**, **Astro.js**, **Alpine.js**, **Bootstrap**,
 
 ## Getting Started
 
+### Using as a GitHub Template
+
+To use this repository as a template for your project:
+
+1. Click the **"Use this template"** button at the top of the GitHub repository page.
+2. Follow the prompts to create your new repository.
+
+Alternatively, you can clone this repository manually:
+
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/bun-astro-starter-with-bootstrap.git
+   git clone https://github.com/casoon/bun-astro-starter-with-bootstrap.git
    ```
 
 2. Navigate to the project directory:
