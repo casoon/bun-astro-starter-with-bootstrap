@@ -6,6 +6,9 @@
 
 A starter template using **Bun.js**, **Astro.js**, **Alpine.js**, **Bootstrap**, **Lightning CSS**, and **TypeScript**.
 
+This project is live
+at: [https://bun-astro-starter-with-bootstrap.casoon.dev/](https://bun-astro-starter-with-bootstrap.casoon.dev/)
+
 You can use this project as a template to quickly start your own project. Simply click the **"Use this template"**
 button on GitHub, and you'll have a copy of the repository to work with.
 
@@ -128,6 +131,18 @@ bun-astro-starter-with-bootstrap/
 - `@astrojs/ts-plugin`: TypeScript support for Astro.
 - `@types/node`: TypeScript definitions for Node.js.
 - `@types/bootstrap`: TypeScript definitions for Bootstrap.
+
+## Measuring Page Size and Performance
+
+To measure the page size and speed of your site, you can use **Google PageSpeed Insights**.
+
+-
+Visit [PageSpeed Insights for this project](https://pagespeed.web.dev/analysis/https-bun-astro-starter-with-bootstrap-casoon-dev/0dl98nu056?form_factor=mobile)
+to view a detailed performance report
+for [https://bun-astro-starter-with-bootstrap.casoon.dev/](https://bun-astro-starter-with-bootstrap.casoon.dev/).
+
+PageSpeed Insights provides metrics on performance, accessibility, best practices, and SEO, with specific suggestions
+for improving your site’s loading speed and overall performance.
 
 ## License
 

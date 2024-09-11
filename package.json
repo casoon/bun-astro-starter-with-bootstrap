@@ -17,8 +17,8 @@
     "alpinejs": "^3.14.1",
     "astro": "^4.15.4",
     "bootstrap": "^5.3.3",
-    "typescript": "^5.5.4",
-    "sass": "^1.78.0"
+    "sass": "^1.78.0",
+    "typescript": "^5.5.4"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.2",
