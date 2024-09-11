@@ -136,7 +136,6 @@ bun-astro-starter-with-bootstrap/
 
 To measure the page size and speed of your site, you can use **Google PageSpeed Insights**.
 
--
 Visit [PageSpeed Insights for this project](https://pagespeed.web.dev/analysis/https-bun-astro-starter-with-bootstrap-casoon-dev/0dl98nu056?form_factor=mobile)
 to view a detailed performance report
 for [https://bun-astro-starter-with-bootstrap.casoon.dev/](https://bun-astro-starter-with-bootstrap.casoon.dev/).
