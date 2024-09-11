@@ -4,7 +4,7 @@
 ![Stars](https://img.shields.io/github/stars/casoon/bun-astro-starter-with-bootstrap)
 ![Issues](https://img.shields.io/github/issues/casoon/bun-astro-starter-with-bootstrap)
 
-A starter template using **Bun.js**, **Astro.js**, **Alpine.js**, **Bootstrap**, and **TypeScript**.
+A starter template using **Bun.js**, **Astro.js**, **Alpine.js**, **Bootstrap**, **Lightning CSS**, and **TypeScript**.
 
 ## Features
 
@@ -14,6 +14,7 @@ A starter template using **Bun.js**, **Astro.js**, **Alpine.js**, **Bootstrap**,
 - **Bootstrap**: CSS framework for responsive and modern design.
 - **TypeScript**: Static typing for a better developer experience.
 - **Sass**: CSS preprocessor for writing reusable, scalable styles.
+- **Lightning CSS**: Fast CSS minification and autoprefixing for optimized styles.
 
 ## Requirements
 
@@ -77,6 +78,15 @@ $primary: #ffa500; // Custom orange primary color
 
 You can import only the necessary Bootstrap components to keep the bundle size small.
 
+## Lightning CSS
+
+This project uses **Lightning CSS** for CSS optimization. Lightning CSS handles minification and autoprefixing to ensure
+that the final CSS is both lightweight and compatible with a wide range of browsers.
+
+Lightning CSS is automatically applied during the build process, so you don’t need to configure anything manually. If
+you need to customize or disable certain optimizations, you can refer to
+the [Lightning CSS documentation](https://github.com/parcel-bundler/lightningcss).
+
 ## Project Structure
 
 ```plaintext
@@ -99,13 +109,13 @@ bun-astro-starter-with-bootstrap/
 - `bootstrap`: CSS framework for responsive design.
 - `typescript`: Static typing.
 - `sass`: CSS preprocessor.
+- `lightningcss`: CSS optimizer and autoprefixer.
 
 ## Dev Dependencies
 
 - `@astrojs/ts-plugin`: TypeScript support for Astro.
 - `@types/node`: TypeScript definitions for Node.js.
 - `@types/bootstrap`: TypeScript definitions for Bootstrap.
-- `lightningcss`: Optimizer for CSS.
 
 ## License
 
