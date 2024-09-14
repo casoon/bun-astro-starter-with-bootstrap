@@ -205,6 +205,10 @@ for improving your site’s loading speed and overall performance.
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## Contributing
+
+Feel free to open issues or submit
+
 ## Author
 
 Created by **Casoon**.
