@@ -122,10 +122,42 @@ Alternatively, you can clone this repository manually:
 
    The app will be available at `http://localhost:3000`.
 
+## Testing Accessibility with axe-core and Lighthouse
+
+This project includes automated accessibility tests using **axe-core** and **Lighthouse**. These tests are executed
+automatically after each build to ensure that the website adheres to best practices for accessibility.
+
+### Running axe-core
+
+**axe-core** is used to detect accessibility issues on the built website. The test script is located in `test-axe.js`
+and runs automatically after the build.
+
+You can manually trigger the axe-core test by running:
+
+```bash
+bun run test:axe
+```
+
+### Running Lighthouse
+
+**Lighthouse** is used to measure accessibility, performance, and other metrics. The test script is located in
+`test-lighthouse.js` and runs automatically after the build, generating a report in `lighthouse-report.html`.
+
+You can manually trigger the Lighthouse test by running:
+
+```bash
+bun run test:lighthouse
+```
+
+Both tests will run automatically after the build when you execute:
+
 ## Scripts
 
 - `dev`: Start the development server.
 - `build`: Create a production build.
+- `postbuild`: Run axe-core and Lighthouse accessibility tests.
+- `test:axe`: Run axe-core accessibility test.
+- `test:lighthouse`: Run Lighthouse accessibility test.
 - `start`: Preview the production build.
 - `check`: Run TypeScript checks.
 - `clean`: Clean up the build directory.
