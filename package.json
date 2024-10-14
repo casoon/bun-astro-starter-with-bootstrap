@@ -11,9 +11,9 @@
     "clean": "rm -rf dist .astro",
     "sass": "sass src/styles/bootstrap.scss src/styles/bootstrap.css --style=compressed --quiet --source-map",
     "sass:watch": "sass --watch src/styles/bootstrap.scss:src/styles/bootstrap.css --style=compressed --quiet --source-map",
-    "test:axe": "node test-axe.js",
+    "test:axe": "node test-axe.mjs",
     "postbuild": "npm run test:axe && npm run test:lighthouse",
-    "test:lighthouse": "node test-lighthouse.js"
+    "test:lighthouse": "node test-lighthouse.mjs"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
@@ -25,7 +25,8 @@
     "lighthouse": "^12.2.1",
     "puppeteer": "^23.5.3",
     "sass": "^1.79.5",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "http-server": "^14.1.1"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.2",
