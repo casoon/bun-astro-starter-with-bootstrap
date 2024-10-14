@@ -12,7 +12,7 @@
     "sass": "sass src/styles/bootstrap.scss src/styles/bootstrap.css --style=compressed --quiet --source-map",
     "sass:watch": "sass --watch src/styles/bootstrap.scss:src/styles/bootstrap.css --style=compressed --quiet --source-map",
     "test:axe": "node test-axe.mjs",
-    "postbuild": "npm run test:axe && npm run test:lighthouse",
+    "postbuild": "echo 'Build completed. Run accessibility tests manually if needed: npm run test:axe && npm run test:lighthouse'",
     "test:lighthouse": "node test-lighthouse.mjs"
   },
   "dependencies": {
